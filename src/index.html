@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <script>
+        document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + "px"
+    </script>
+    <title>Document</title>
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <a href="#">
+                <i class="icon iconfont icon-yinlezanting"></i>
+            </a>
+            <div class="inps">
+                <input type="text" placeholder="给你推荐 菩提">
+            </div>
+            <a href="#">
+                <i class="icon iconfont icon-gengduo-2"></i>
+            </a>
+        </header>
+        <section>
+            <div class="scroll">
+                <nav>
+                    <a href="#" class="active"><span>音乐</span></a>
+                    <a href="#"><span>视频</span></a>
+                    <a href="#"><span>电台</span></a>
+                </nav>
+                <div class="banner swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="imgs/banner.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="imgs/banner.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="imgs/banner.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="imgs/banner.png" alt="">
+                        </div>
+                    </div>
+                    <div class="page swiper-pagination"></div>
+                </div>
+                <div class="new">
+                    <dl>
+                        <dt><img src="./imgs/nav.png" alt=""></dt>
+                        <dd>私人FM</dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="./imgs/nav.png" alt=""></dt>
+                        <dd>私人FM</dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="./imgs/nav.png" alt=""></dt>
+                        <dd>私人FM</dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="./imgs/nav.png" alt=""></dt>
+                        <dd>私人FM</dd>
+                    </dl>
+                </div>
+                <div class="list">
+                    <h1>推荐歌曲</h1>
+                    <div class="list-lists">
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <img src="./imgs/list.png" alt="">
+                                    </dt>
+                                    <dd>
+                                        才能看见的出你的空间
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <img src="./imgs/list.png" alt="">
+                                    </dt>
+                                    <dd>
+                                        才能看见的出你的空间
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <img src="./imgs/list.png" alt="">
+                                    </dt>
+                                    <dd>
+                                        才能看见的出你的空间
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                            <img src="./imgs/list.png" alt="">
+                                        </dt>
+                                    <dd>
+                                        才能看见的出你的空间
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                            <img src="./imgs/list.png" alt="">
+                                        </dt>
+                                    <dd>
+                                        才能看见的出你的空间
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                            <img src="./imgs/list.png" alt="">
+                                        </dt>
+                                    <dd>
+                                        才能看见的出你的空间
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <a href="#" class="act">
+                <i class="icon iconfont icon-shouye"></i>
+                <span>发现音乐</span>
+            </a>
+            <a href="#">
+                <i class="icon iconfont icon-wode-xuanzhong"></i>
+                <span>我的音乐</span>
+            </a>
+            <a href="#">
+                <i class="icon iconfont icon-wode-xuanzhong"></i>
+                <span>朋 友</span>
+            </a>
+            <a href="#">
+                <i class="icon iconfont icon-wode-xuanzhong"></i>
+                <span>账 号</span>
+            </a>
+        </footer>
+    </div>
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/swiper-3.4.2.min.js"></script>
+    <script>
+        new Swiper(".banner", {
+            loop: true,
+            autoplay: 1000,
+            pagination: ".page"
+        })
+    </script>
+</body>
+
+</html>

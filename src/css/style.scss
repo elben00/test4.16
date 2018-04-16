@@ -1,0 +1,202 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input,
+button,
+textarea,
+select {
+    outline: none;
+}
+
+%text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+%moretext {
+    display: box;
+    display: -webkit-box;
+    word-break: break-all;
+    box-orient: vertical;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin num($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin flex($j:space-between) {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: $j;
+    -webkit-justify-content: $j;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+html,
+body {
+    @include num(100%, 100%);
+}
+
+.wrap {
+    @include num(100%, 100%);
+    display: flex;
+    flex-direction: column;
+    font-size: .32rem;
+}
+
+header {
+    @include num(100%, .9rem);
+    background: #C4493C;
+    @include flex();
+    a {
+        @include num(1rem, 100%);
+        text-align: center;
+        line-height: .9rem;
+        i.icon {
+            font-size: .5rem;
+            color: #fff;
+        }
+    }
+    .inps {
+        flex: 1;
+        color: #C1C1C1;
+        input {
+            @include num(100%, .7rem);
+            border: none;
+            border-radius: .2rem;
+            background: #fff;
+            text-align: center;
+            color: #C1C1C1;
+        }
+    }
+}
+
+footer {
+    @include num(100%, 1rem);
+    background: #333332;
+    @include flex(space-around);
+    a {
+        flex: 1;
+        @include flex(space-between);
+        flex-direction: column;
+        color: #A8A7A8;
+        i.icon {
+            font-size: .4rem;
+        }
+        span {
+            font-size: .28rem;
+        }
+        &.act {
+            color: #fff;
+        }
+    }
+}
+
+section {
+    flex: 1;
+    overflow-y: scroll;
+    .scroll {
+        nav {
+            @include num(100%, .8rem);
+            @include flex(space-around);
+            a {
+                flex: 1;
+                text-align: center;
+                span {
+                    color: #39393A;
+                    display: inline-block;
+                    height: .8rem;
+                    line-height: .8rem;
+                }
+                &.active {
+                    span {
+                        border-bottom: 2px solid #C3473A;
+                        color: #C3473A;
+                    }
+                }
+            }
+        }
+        .banner {
+            @include num(100%, auto);
+            img {
+                @include num(100%, auto);
+                display: block;
+            }
+        }
+        .new {
+            @include num(100%, 2.1rem);
+            border-bottom: 1px solid #E3E3E4;
+            @include flex(space-around);
+            dl {
+                flex: 1;
+                dt {
+                    @include num(100%, auto);
+                    text-align: center;
+                    img {
+                        @include num(70%, auto);
+                    }
+                }
+                dd {
+                    @include num(100%, auto);
+                    text-align: center;
+                    line-height: 1.5;
+                }
+            }
+        }
+        .list {
+            @include num(100%, auto);
+            h1 {
+                @include num(100%, .9rem);
+                font-size: .4rem;
+                padding-left: .2rem;
+                line-height: .9rem;
+                color: #323334;
+                font-weight: 600;
+            }
+            ul {
+                @include num(100%, auto);
+                li {
+                    @include num(100%, auto);
+                    @include flex(space-around);
+                    dl {
+                        flex: 1;
+                        margin: 0 .1rem;
+                        dt {
+                            img {
+                                @include num(100%, auto);
+                            }
+                        }
+                        dd {
+                            line-height: 1.5;
+                            height: 1rem;
+                            display: box;
+                            display: -webkit-box;
+                            word-break: break-all;
+                            box-orient: vertical;
+                            -webkit-box-orient: vertical;
+                            line-clamp: 2;
+                            -webkit-line-clamp: 2;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

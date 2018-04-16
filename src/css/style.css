@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+input,
+button,
+textarea,
+select {
+  outline: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: .32rem;
+}
+
+header {
+  width: 100%;
+  height: 0.9rem;
+  background: #C4493C;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+header a {
+  width: 1rem;
+  height: 100%;
+  text-align: center;
+  line-height: .9rem;
+}
+
+header a i.icon {
+  font-size: .5rem;
+  color: #fff;
+}
+
+header .inps {
+  flex: 1;
+  color: #C1C1C1;
+}
+
+header .inps input {
+  width: 100%;
+  height: 0.7rem;
+  border: none;
+  border-radius: .2rem;
+  background: #fff;
+  text-align: center;
+  color: #C1C1C1;
+}
+
+footer {
+  width: 100%;
+  height: 1rem;
+  background: #333332;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+footer a {
+  flex: 1;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  -webkit-align-items: center;
+  flex-direction: column;
+  color: #A8A7A8;
+}
+
+footer a i.icon {
+  font-size: .4rem;
+}
+
+footer a span {
+  font-size: .28rem;
+}
+
+footer a.act {
+  color: #fff;
+}
+
+section {
+  flex: 1;
+  overflow-y: scroll;
+}
+
+section .scroll nav {
+  width: 100%;
+  height: 0.8rem;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+section .scroll nav a {
+  flex: 1;
+  text-align: center;
+}
+
+section .scroll nav a span {
+  color: #39393A;
+  display: inline-block;
+  height: .8rem;
+  line-height: .8rem;
+}
+
+section .scroll nav a.active span {
+  border-bottom: 2px solid #C3473A;
+  color: #C3473A;
+}
+
+section .scroll .banner {
+  width: 100%;
+  height: auto;
+}
+
+section .scroll .banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+section .scroll .new {
+  width: 100%;
+  height: 2.1rem;
+  border-bottom: 1px solid #E3E3E4;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+section .scroll .new dl {
+  flex: 1;
+}
+
+section .scroll .new dl dt {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+section .scroll .new dl dt img {
+  width: 70%;
+  height: auto;
+}
+
+section .scroll .new dl dd {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  line-height: 1.5;
+}
+
+section .scroll .list {
+  width: 100%;
+  height: auto;
+}
+
+section .scroll .list h1 {
+  width: 100%;
+  height: 0.9rem;
+  font-size: .4rem;
+  padding-left: .2rem;
+  line-height: .9rem;
+  color: #323334;
+  font-weight: 600;
+}
+
+section .scroll .list ul {
+  width: 100%;
+  height: auto;
+}
+
+section .scroll .list ul li {
+  width: 100%;
+  height: auto;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+section .scroll .list ul li dl {
+  flex: 1;
+  margin: 0 .1rem;
+}
+
+section .scroll .list ul li dl dt img {
+  width: 100%;
+  height: auto;
+}
+
+section .scroll .list ul li dl dd {
+  line-height: 1.5;
+  height: 1rem;
+  display: box;
+  display: -webkit-box;
+  word-break: break-all;
+  box-orient: vertical;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
